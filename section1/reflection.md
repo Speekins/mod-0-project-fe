@@ -32,6 +32,6 @@ A BLOCK OF CODE
 7. In your own words, explain what concatenation is.
 - concatenation is the act of combining two things. In programming, that could be two strings, a number and a string, a string and a boolean, etc.
 8. Think of a site or app you use frequently. Where do you think the developers used concatenation?
-- `firstName + lastName`
+- Many apps will likely concatenate the user's first and last name (`firstName + lastName`)
 9. What questions do you still have about the work we've done so far? (not having a question is not an option)
 - Considering the blog post about writing Git commits, how do I write a commit message using a text editor (e.g. Vim or Atom) instead of using the one line `-m` command?
