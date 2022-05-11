@@ -52,18 +52,23 @@ you develop good habits that follow best practice, from now on, use the strict c
 
 // YOU DO: log the result of the comparison: is numberTeachers not equal to numberStudents?
 // this should log: true
+console.log("is numberTeachers not equal to numberStudents?", numberTeachers !== numberStudents)
 
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 20?
 // this should log: true
+console.log("is numberStudents greater than or equal to 20?", numberStudents >= 20)
 
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 21?
 // this should log: false
+console.log("is numberStudents greater than or equal to 21?", numberStudents >= 21)
 
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 20?
 // this should log: true
+console.log("is numberStudents less than or equal to 20?", numberStudents <= 20)
 
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 21?
 // this should log: true
+console.log("is numberStudents less than or equal to 21?", numberStudents <= 21)
 
 
 //-------------------
@@ -77,21 +82,26 @@ you develop good habits that follow best practice, from now on, use the strict c
 
 console.log(4 < 9);
 //YOU DO: Explain.
+//log if 4 is less than 9 using the less than comparison operator.
 
 var books = 3;
 console.log(4 < books);
 // YOU DO: Explain.
+//Declare a variable `books` and assign the number 3 to it. Log if the integer 4 is less than the value assigned to `books`.
 
 var friends = 6;
 var siblings = 2;
 console.log(friends > siblings);
 // YOU DO: Explain.
+//declare the variable `friends`, assign the integer 6 to it. Declare a variable `siblings` 
+//and assign the integer 2. Log if the value assigned to `friends` is greater than `siblings`.
 
 var attendees = 9;
 var meals = 8;
 console.log(attendees !== meals);
 // YOU DO: Explain.
-
+//Declare the variable called ‘attendees` and assign the integer 9 to it. Declare the variable `meals` 
+//and assign the value 4 to it. Log if the value of attendees is equal to the value of meals
 
 //-------------------
 // PART 3: Logical Operators
@@ -113,18 +123,19 @@ var age = 1;
 
 // YOU DO:
 // Determine if the dog loves to play and loves treats
-
+console.log(lovesToPlay && lovesTreats)
 
 // Determine if the dog loves to play and loves the dog park
-
+console.log(lovesToPlay && lovesDogPark)
 
 // Determine if the dog loves to play or loves the dog park
-
+console.log(lovesToPlay || lovesDogPark)
 
 // Determine if the dog loves to play and is a puppy
+console.log(lovesToPlay && isPuppy)
 
 // What did your final line of code evaluate to? Why do you think that is? Explain.
-// ANSWER:
+// ANSWER: The result of the last console.log statement is a referenceError. This occurs because the variable `isPuppy` was never declared.
 
 //-------------------
 // FINAL CHECK
