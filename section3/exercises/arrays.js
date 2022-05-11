@@ -24,43 +24,48 @@ console.log(animals[0]);
 
 // YOU DO: Write code below that will log the number of elements in array of
 // animals from above.
-
+console.log(animals.length);
 
 // YOU DO: Write code that will reassign the last item in the animals
 // array to "Gorilla"
-
+animals[2] = "Gorilla";
 
 // YOU DO: Write code that will add a new animal (type of your choice) to position 3.
-
+animals[3] = "Parakeet";
 
 // YOU DO: Write code that will log the String "Elephant" in the animals array
-
+animals[2] = "Elephant";
+console.log(animals[2]);
 
 //-------------------
 // PART 2: Foods: Array Methods
 //-------------------
 
 // YOU DO: Declare a variable that will store an an array of at least 4 foods (strings)
-
+var favoriteFoods = ['cake', 'donut', 'pizza', 'kale'];
 
 // YOU DO: Write code below that will log the number of elements in the array of
 // foods from above.
-
+console.log(favoriteFoods.length);
 
 // YOU DO: Write code below that uses a method to add "broccoli" to the foods array and
 // log the changed array to verify "broccoli" has been added
-
+favoriteFoods.push('broccoli');
+console.log(favoriteFoods);
 
 // YOU DO: Write code below that removes the last item of food from the foods array and
 // log the changed array to verify that item has been removed
-
+favoriteFoods.pop();
+console.log(favoriteFoods);
 
 // YOU DO: Write code to add 3 new foods to the array. 
-  // There are several ways to do this - choose whichever you'd like!
+// There are several ways to do this - choose whichever you'd like!
 // Then, log the changed array to verify the new items have been added
-
+favoriteFoods.push('escargot', 'ratatouille', 'pain au chocolat');
+console.log(favoriteFoods);
 // YOU DO: Remove the food that is in index position 0.
-
+favoriteFoods.shift();
+console.log(favoriteFoods);
 //-------------------
 // PART 3: Where are Arrays used?
 //-------------------
@@ -82,9 +87,9 @@ var posts = ["image at beach", "holiday party", "adorable puppy", "video of cute
 // may be storing data? Come up with 3 examples - they could be from different web applications or 
 // all from the same one.
 
-// 1:
-// 2:
-// 3:
+// 1: King Soopers app - a grocery list of items the user has chosen for pick-up or drop-off.
+// 2: Gmail - the inbox is a list of emails
+// 3: Mint (a budgeting app) - a budget contains a list of various expenses per month
 
 
 //-------------------
@@ -98,7 +103,7 @@ will be able to call an Uber.
 
 The user can call an uber if they have 15% battery remaining, or more. In this case, it doesn't matter 
 if the user has a charger at all, or what type.
-The can call an uber if they have a charger and it is a car charger.
+They can call an uber if they have a charger and it is a car charger.
 
 */
 var percentBatteryLeft = 12;
@@ -107,6 +112,16 @@ var chargerType = "car";
 
 // Write your conditional here
 
+//This `if` statement will catch if the user's phone power is above or below 15%. If above the user may proceed. If below,
+//it falls through to the next conditional.
+if (percentBatteryLeft >= 15) {
+  console.log("You have enough battery power to call an Uber!")
+  //This condition determines if the Uber rideshare has a charger and if that charger is used with cars. If so, again the user may proceed.
+} else if (hasCharger === true && chargerType === "car") {
+  console.log("Your phone is running low on power. But good news, your ride has a car charger!")
+  //If none of the conditions above have passed, by default this response is all that remains. The user will not be able to call an Uber
+  //until they have charged their phone.
+} else { console.log("Your phone does not have enough power. Unable to get an Uber at this time.") }
 
 // YOU DO - ANNOTATE: Above each line of your code for this if statement, create a comment.
 // That comment should describe, in your own words, and as technically precise as possible,

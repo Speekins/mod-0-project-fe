@@ -23,14 +23,20 @@ for (var i = 0; i < 3; i++) {
 }
 
 // What is logged to the console for this second example? Why?
-// EXPLAIN:
+// EXPLAIN: `0`, `1`, and `2` will be logged to the console. The loop condition is that `i` is to never equal or exceed `3`.
+//Because the initial value of `i` is `0`, this means that the three integers up to (but not including or exceeding) `3` will be logged.
 
 
- // YOU DO: Write code below that logs to the console, the sum of 2 plus 2, 7 times:
+// YOU DO: Write code below that logs to the console, the sum of 2 plus 2, 7 times:
+for (let i = 0; i < 7; i += 1) {
+  console.log(2 + 2);
+}
 
-
- // YOU DO: Write code below that logs the String 'She sells seashells down by the seashore'
- // 10 times.
+// YOU DO: Write code below that logs the String 'She sells seashells down by the seashore'
+// 10 times.
+for (let i = 0; i < 10; i += 1) {
+  console.log("She sells seashells down by the seashore.");
+}
 
 
 //-------------------
@@ -39,6 +45,9 @@ for (var i = 0; i < 3; i++) {
 
 // YOU DO: Write code below that logs to the console a String of "This is loop number: " 
 //that concatenates with `i`.
+for (let i = 1; i <= 10; i += 1) {
+  console.log(`This is loop number ${i}!`);
+}
 
 // YOU DO: Using a for loop, how could you get an output that looks like this:
 
@@ -52,6 +61,10 @@ for (var i = 0; i < 3; i++) {
 // 3
 // 2
 // 1
+
+for (let i = 10; i > 0; i--) {
+  console.log(i);
+}
 
 // Not sure? Try to google some terms that seem relevant. Play around with it. Don't spend 
 // more than 15 minutes without making progress. If you are at 15 minutes and haven't made
